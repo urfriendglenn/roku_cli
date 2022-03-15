@@ -7,8 +7,14 @@ class MyPrompt(Cmd):
     prompt = 'roku> '
     intro = "Welcome to RokuCLI! Type ? to list commands"
  
+    def do_up(self, inp):
+        requests.post('http://' + ip + ':8060/keypress/Up')
     def do_down(self, inp):
         requests.post('http://' + ip + ':8060/keypress/Down')
+    def do_left(self, inp):
+        requests.post('http://' + ip + ':8060/keypress/Left')
+    def do_right(self, inp):
+        requests.post('http://' + ip + ':8060/keypress/Right')
  
 if __name__ == '__main__':
     MyPrompt().cmdloop()
