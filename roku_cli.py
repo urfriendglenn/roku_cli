@@ -5,7 +5,7 @@ ip = input("Roku IP: ")
 
 class Prompt(Cmd):
     prompt = 'roku> '
-    intro = "Welcome to RokuCLI! Type ? to list commands"
+    intro = "Welcome to RokuCLI! Type ? to list commands."
  
     def do_up(self, inp):
         requests.post('http://' + ip + ':8060/keypress/Up')
@@ -29,6 +29,9 @@ class Prompt(Cmd):
         requests.post('http://' + ip + ':8060/keypress/Play')
     def do_forward(self, inp):
         requests.post('http://' + ip + ':8060/keypress/Fwd')
+    def do_exit(self, inp):
+        print("Goodbye!")
+        quit()
     
  
 if __name__ == '__main__':
