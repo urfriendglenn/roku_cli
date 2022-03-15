@@ -11,6 +11,19 @@ This script launches a CLI that connects to a Roku device and acts as a remote. 
 2. Run the `roku_cli.py` command.
 3. Provide the Roku Device IP Address
 
+## Commands
+
+* up
+* down
+* left
+* right
+* select
+* back
+* replay
+* info
+* reverse
+* play
+* forward
 ## Requirements
 
 The device you are running this script from must be connected to the same WiFi network as the target Roku Device.
