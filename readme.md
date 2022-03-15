@@ -24,6 +24,8 @@ This script launches a CLI that connects to a Roku device and acts as a remote. 
 * reverse
 * play
 * forward
+* exit
+
 ## Requirements
 
 The device you are running this script from must be connected to the same WiFi network as the target Roku Device.
